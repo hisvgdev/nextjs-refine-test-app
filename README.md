@@ -57,6 +57,12 @@ corepack install
 pnpm install
 ```
 
+## Replace env.example to env
+
+```shell
+  cp .env.example .env
+```
+
 ## Running
 
 ```shell
