@@ -11,6 +11,7 @@ import React, { Suspense } from "react";
 
 import { ColorModeContextProvider } from "@contexts/color-mode";
 import DevtoolsProvider from "@providers/devtools";
+import { Header } from "@components/Header/Header";
 
 export const metadata: Metadata = {
   title: "Memposit NextJS + Refine Test",
@@ -47,6 +48,7 @@ export default function RootLayout({
                     notificationProvider={useNotificationProvider}
                     options={refineOptions}
                   >
+                    <Header />
                     {children}
                     <RefineKbar />
                   </Refine>
